@@ -1,0 +1,1211 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: design-plus\n"
+"Report-Msgid-Bugs-To: https://core.trac.wordpress.org/\n"
+"POT-Creation-Date: 2025-07-30 18:02+0900\n"
+"PO-Revision-Date: 2025-07-30 18:02+0900\n"
+"Last-Translator: Design Plus <support@wp-dp.com>\n"
+"Language-Team: design plus\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.6\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: "
+"__;_e;esc_html_e;esc_attr_e;esc_html__;esc_attr__;_x;_ex\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: classes/class-tcdce-admin-menu.php:54 classes/class-tcdce-admin-menu.php:55
+#: classes/class-tcdce-block-editor.php:71
+msgid "TCD Classic Editor"
+msgstr "TCDクラシックエディタ"
+
+#: classes/class-tcdce-admin-menu.php:103
+#: classes/class-tcdce-admin-menu.php:104
+#: classes/class-tcdce-admin-menu.php:177 setting/start-guide.php:15
+msgid "Start guide"
+msgstr "スタートガイド"
+
+#: classes/class-tcdce-admin-menu.php:158
+msgid "Select Image"
+msgstr "画像を選択"
+
+#: classes/class-tcdce-admin-menu.php:161
+msgid "Error was occurred. Please retry again."
+msgstr "エラーが発生しました。もう一度お試しください。"
+
+#: classes/class-tcdce-admin-menu.php:191
+msgid "Manual"
+msgstr "マニュアル"
+
+#: classes/class-tcdce-admin-menu.php:206
+msgid "Settings saved."
+msgstr "設定を保存しました。"
+
+#: classes/class-tcdce-admin-menu.php:209
+msgid "Could not save settings."
+msgstr "設定を保存できませんでした。"
+
+#: classes/class-tcdce-admin-menu.php:212
+msgid "Settings reset."
+msgstr "設定をリセットしました。"
+
+#: classes/class-tcdce-admin-menu.php:215
+msgid "Import is complete."
+msgstr "インポートが完了しました。"
+
+#: classes/class-tcdce-admin-menu.php:240
+#: classes/support/class-tcdce-support.php:726
+msgid "Settings"
+msgstr "設定"
+
+#: classes/class-tcdce-block-editor.php:49 setting/quicktag/box.php:385
+#: setting/quicktag/heading.php:656 setting/quicktag/ol.php:387
+#: setting/quicktag/ul.php:366
+msgid "Border"
+msgstr "枠線"
+
+#: classes/class-tcdce-block-editor.php:111
+#: classes/class-tcdce-block-editor.php:126 setting/google-maps.php:155
+msgid "Default"
+msgstr "デフォルト"
+
+#: classes/class-tcdce-editor.php:243 setting/quicktag.php:17
+#: setting/start-guide.php:33
+msgid "Quicktag"
+msgstr "クイックタグ"
+
+#: classes/class-tcdce-editor.php:265
+msgid "2 column"
+msgstr "2カラム"
+
+#: classes/class-tcdce-editor.php:266 classes/class-tcdce-editor.php:271
+msgid "Text and image tags to display in the left column"
+msgstr "ここに左カラムに表示させたい任意のテキストや画像タグを入力します"
+
+#: classes/class-tcdce-editor.php:266 classes/class-tcdce-editor.php:271
+msgid "Text and image tags to display in the right column"
+msgstr "ここに右カラムに表示させたい任意のテキストや画像タグを入力します"
+
+#: classes/class-tcdce-editor.php:270
+msgid "3 column"
+msgstr "3カラム"
+
+#: classes/class-tcdce-editor.php:271
+msgid "Text and image tags to display in the center column"
+msgstr "ここに真ん中カラムに表示させたい任意のテキストや画像タグを入力します"
+
+#: classes/class-tcdce-editor.php:275
+msgid "Tab"
+msgstr "タブ"
+
+#: classes/class-tcdce-editor.php:276
+msgid ""
+"[tcd_tab tab1=\"Tab1 headline\" img1=\"Tab1 image url\" tab2=\"Tab2 "
+"headline\" img2=\"Tab2 image url\"]"
+msgstr ""
+"[tcd_tab tab1=\"タブ1の見出し\" img1=\"タブ1の画像URL\" tab2=\"タブ2の見出し"
+"\" img2=\"タブ2の画像URL\"]"
+
+#: classes/class-tcdce-editor.php:421
+msgid "This post ID does not exist."
+msgstr "この投稿IDは存在しません。"
+
+#: classes/class-tcdce-editor.php:460
+msgid "Please enter the correct URL."
+msgstr "正しいURLを入力してください。"
+
+#: classes/class-tcdce-editor.php:558
+msgid "The address has not been entered."
+msgstr "住所が入力されておりません。"
+
+#: classes/class-tcdce-editor.php:565
+msgid "Google Maps Platform API key not entered."
+msgstr "Google Maps Platform APIキーが入力されておりません。"
+
+#: classes/class-tcdce-qt-fields.php:163
+msgid "Save Changes"
+msgstr "設定を保存"
+
+#: classes/class-tcdce-qt-fields.php:173 classes/class-tcdce-qt-fields.php:179
+msgid "Reset settings"
+msgstr "設定をリセット"
+
+#: classes/class-tcdce-qt-fields.php:177
+msgid "Initialize settings."
+msgstr "設定を初期化します。"
+
+#: classes/class-tcdce-qt-fields.php:177
+msgid "Please note that all current settings will be deleted."
+msgstr "現在の設定値は全て削除されますのでご注意ください。"
+
+#: classes/class-tcdce-qt-fields.php:212
+msgid "This field is required."
+msgstr "こちらは入力必須項目です。"
+
+#: classes/class-tcdce-qt-fields.php:424
+msgid "Add image"
+msgstr "画像を追加"
+
+#: classes/class-tcdce-qt-fields.php:429
+msgid "Change image"
+msgstr "画像を変更"
+
+#: classes/class-tcdce-qt-fields.php:449
+msgid "Select Preset"
+msgstr "プリセットを選択"
+
+#: classes/class-tcdce-qt-fields.php:523 setting/quicktag/box.php:285
+#: setting/quicktag/button.php:263 setting/quicktag/cardlink.php:64
+#: setting/quicktag/custom_tag.php:93 setting/quicktag/gmap.php:77
+#: setting/quicktag/heading.php:531 setting/quicktag/marker.php:172
+#: setting/quicktag/ol.php:283 setting/quicktag/sb.php:233
+#: setting/quicktag/ul.php:263
+msgid "Registered name"
+msgstr "登録名"
+
+#: classes/class-tcdce-qt-fields.php:526
+msgid "Can I delete this Quicktag?"
+msgstr "このクイックタグを削除してもよろしいでしょうか？"
+
+#: classes/class-tcdce-toc-widget.php:21
+msgid "This widget can display a table of contents."
+msgstr "目次を表示できるウィジェットです。"
+
+#: classes/class-tcdce-toc-widget.php:25
+msgid "Table of Contents (tcd ver)"
+msgstr "【TCD】目次"
+
+#: classes/class-tcdce-toc-widget.php:85 setting/table-of-contents.php:173
+#, php-format
+msgid "Display with %s or more"
+msgstr "%sつ以上で表示"
+
+#: classes/class-tcdce-toc-widget.php:90 setting/table-of-contents.php:189
+msgid "h2-h3"
+msgstr "h2〜h3"
+
+#: classes/class-tcdce-toc-widget.php:91 setting/table-of-contents.php:190
+msgid "h2-h4"
+msgstr "h2〜h4"
+
+#: classes/class-tcdce-toc-widget.php:92 setting/table-of-contents.php:191
+msgid "h2-h5"
+msgstr "h2〜h5"
+
+#: classes/class-tcdce-toc-widget.php:93 setting/table-of-contents.php:192
+msgid "h2-h6"
+msgstr "h2〜h6"
+
+#: classes/class-tcdce-toc-widget.php:94 setting/table-of-contents.php:188
+msgid "Only h2 tags"
+msgstr "h2のみ"
+
+#: classes/class-tcdce-toc-widget.php:101
+msgid "It will be displayed only if the following conditions are met."
+msgstr "以下の条件を満たす場合のみ表示されます。"
+
+#: classes/class-tcdce-toc-widget.php:104 setting/table-of-contents.php:123
+msgid "Post types"
+msgstr "投稿タイプ"
+
+#: classes/class-tcdce-toc-widget.php:105
+msgid "No post type to display"
+msgstr "表示する投稿タイプ無し"
+
+#: classes/class-tcdce-toc-widget.php:108 setting/table-of-contents.php:165
+msgid "Display conditions"
+msgstr "表示条件"
+
+#: classes/class-tcdce-toc-widget.php:112 setting/table-of-contents.php:182
+msgid "Target headings"
+msgstr "対象となる見出しタグ"
+
+#: classes/class-tcdce-toc-widget.php:118
+msgid "Display the table of contents following the screen."
+msgstr "目次を画面に追従表示させる"
+
+#: classes/class-tcdce-toc-widget.php:122
+msgid "Currently, the sidebar is set to not display the table of contents."
+msgstr "現在、サイドバーに目次を表示できない設定となっています。"
+
+#: classes/class-tcdce-toc-widget.php:124
+msgid "Here is the table of contents setup"
+msgstr "目次の設定はこちら"
+
+#: classes/class-tcdce-toc.php:174 classes/class-tcdce-toc.php:358
+#: setting/start-guide.php:43 setting/table-of-contents.php:17
+#: setting/table-of-contents.php:45 setting/table-of-contents.php:205
+msgid "Table of contents"
+msgstr "目次"
+
+#: classes/class-tcdce-toc.php:374
+msgid "Click here to set the table of contents."
+msgstr "目次の設定はこちら"
+
+#: classes/class-tcdce-toc.php:379
+msgid "Hide the table of contents"
+msgstr "目次を表示しない"
+
+#: classes/support/class-tcdce-support.php:363
+msgid "Default editor for all users"
+msgstr "すべてのユーザーのデフォルトエディター"
+
+#: classes/support/class-tcdce-support.php:364
+msgid "Allow users to switch editors"
+msgstr "ユーザーにエディターの切り替えを許可"
+
+#: classes/support/class-tcdce-support.php:413
+#: classes/support/class-tcdce-support.php:895
+msgid "Classic editor"
+msgstr "旧エディター"
+
+#: classes/support/class-tcdce-support.php:417
+#: classes/support/class-tcdce-support.php:495
+#: classes/support/class-tcdce-support.php:895
+msgid "Block editor"
+msgstr "ブロックエディター"
+
+#: classes/support/class-tcdce-support.php:437
+msgid "Yes"
+msgstr "はい"
+
+#: classes/support/class-tcdce-support.php:441
+msgid "No"
+msgstr "いいえ"
+
+#: classes/support/class-tcdce-support.php:467
+msgid "Default Editor"
+msgstr "デフォルトエディター"
+
+#: classes/support/class-tcdce-support.php:483
+msgid "Editor Settings"
+msgstr "エディター設定"
+
+#: classes/support/class-tcdce-support.php:487
+msgid "Default editor for all sites"
+msgstr "すべてのサイトのデフォルトエディター"
+
+#: classes/support/class-tcdce-support.php:491
+msgid "Classic Editor"
+msgstr "旧エディター"
+
+#: classes/support/class-tcdce-support.php:500
+msgid "Change settings"
+msgstr "設定変更"
+
+#: classes/support/class-tcdce-support.php:503
+msgid "Allow site admins to change settings"
+msgstr "サイト管理者による設定の変更を許可"
+
+#: classes/support/class-tcdce-support.php:504
+msgid ""
+"By default the block editor is replaced with the classic editor and users "
+"cannot switch editors."
+msgstr ""
+"デフォルトでは、ブロックエディターがクラッシックエディターに置き換えられ、"
+"ユーザーはエディターを切り替えることはできません。"
+
+#: classes/support/class-tcdce-support.php:659
+msgid "Editor"
+msgstr "エディター"
+
+#: classes/support/class-tcdce-support.php:678
+msgid "Switch to block editor"
+msgstr "ブロックエディターに切り替え"
+
+#: classes/support/class-tcdce-support.php:707
+msgid "Switch to classic editor"
+msgstr "旧エディターに切り替え"
+
+#: classes/support/class-tcdce-support.php:841
+msgid "Edit (block editor)"
+msgstr "編集（ブロックエディター）"
+
+#: classes/support/class-tcdce-support.php:843
+#, php-format
+msgid "Edit &#8220;%s&#8221; in the block editor"
+msgstr "「%s」をブロックエディターで編集"
+
+#: classes/support/class-tcdce-support.php:848
+msgid "Edit (classic editor)"
+msgstr "編集（旧エディター）"
+
+#: classes/support/class-tcdce-support.php:850
+#, php-format
+msgid "Edit &#8220;%s&#8221; in the classic editor"
+msgstr "「%s」を旧エディターで編集"
+
+#: classes/support/class-tcdce-support.php:879
+msgid "classic editor"
+msgstr "旧エディター"
+
+#: classes/support/class-tcdce-support.php:882
+msgid "block editor"
+msgstr "ブロックエディター"
+
+#: helper.php:136 helper.php:146
+msgid "Import"
+msgstr "インポート"
+
+#: helper.php:139
+msgid "Import exported data to restore settings."
+msgstr "エクスポートしたデータをインポートして設定を復元します。"
+
+#: helper.php:152 helper.php:160
+msgid "Export"
+msgstr "エクスポート"
+
+#: helper.php:155
+msgid "Download the current configuration as a JSON file."
+msgstr "現在の設定をJSONファイルとしてダウンロードします。"
+
+#: helper.php:181 helper.php:246
+msgid "Incorrect setting item."
+msgstr "不正な設定項目です。"
+
+#: helper.php:187
+msgid "File has not been uploaded."
+msgstr "ファイルがアップロードされていません。"
+
+#: helper.php:198
+msgid "Failed to load uploaded file. The file may be corrupted."
+msgstr ""
+"アップロードされたファイルの読み込みに失敗しました。ファイルが破損している可"
+"能性があります。"
+
+#: helper.php:210
+msgid "JSON parsing failed. Please upload a file in the correct format."
+msgstr ""
+"JSON のパースに失敗しました。正しい形式のファイルをアップロードしてください。"
+
+#: helper.php:219
+msgid ""
+"This is not expected data. Please upload the corresponding JSON format file."
+msgstr ""
+"想定されるデータではありません。対応したJSON形式のファイルをアップロードして"
+"ください。"
+
+#: setting/basic.php:17 setting/start-guide.php:28
+msgid "Basic settings"
+msgstr "基本設定"
+
+#: setting/basic.php:72
+msgid "Sets the basic style on which the body text is based."
+msgstr "本文のベースとなる基本的なスタイルを設定します。"
+
+#: setting/basic.php:76
+#, php-format
+msgid ""
+"Please register and use %1$s\"Quick Tags\"%2$s for parts such as headings "
+"and buttons."
+msgstr "見出しやボタンなどは %1$sクイックタグ %2$sで登録してお使いください。"
+
+#: setting/basic.php:99
+msgid "Font size of main text"
+msgstr "本文の文字サイズ"
+
+#: setting/basic.php:100
+msgid "Sets the base font size for the body text."
+msgstr "本文のベースとなる文字サイズを設定します。"
+
+#: setting/basic.php:126
+msgid "Link color of text"
+msgstr "本文のリンクカラー"
+
+#: setting/basic.php:127
+msgid "Sets the text color of text links in the body text."
+msgstr "本文内のテキストリンクの文字色を設定します。"
+
+#: setting/google-maps.php:18 setting/quicktag/gmap.php:19
+#: setting/quicktag/gmap.php:43 setting/start-guide.php:38
+msgid "Google Maps"
+msgstr "Google Maps"
+
+#: setting/google-maps.php:82
+msgid ""
+"This function allows you to customize and display Google Maps pins and "
+"colors."
+msgstr "Google Mapsのピンやカラーをカスタマイズして表示できる機能です。"
+
+#: setting/google-maps.php:83
+msgid "Maps set up here can be used with the \"Google Maps\" quick tag."
+msgstr ""
+"ここで設定したマップは、クイックタグ「Google Maps」でお使いいただけます。"
+
+#: setting/google-maps.php:86
+msgid ""
+"To use this function, you need to obtain an API key for Google Maps Platform."
+msgstr ""
+"この機能を利用するためには、Google Maps Platform のAPIキーの取得が必要です。"
+
+#: setting/google-maps.php:87
+msgid "How to get an API key for Google Maps Platform"
+msgstr "Google Maps Platform のAPIキーの取得方法"
+
+#: setting/google-maps.php:92
+#, php-format
+msgid ""
+"If you do not need to customize the map, you can also embed the map %1$sthis "
+"way%2$s."
+msgstr ""
+"マップのカスタマイズが必要なければ、%1$sこちらの方法%2$sでマップを埋め込むこ"
+"とも可能です。"
+
+#: setting/google-maps.php:144 setting/quicktag/box.php:310
+#: setting/quicktag/button.php:286 setting/quicktag/heading.php:556
+#: setting/quicktag/marker.php:194 setting/quicktag/ol.php:308
+#: setting/quicktag/sb.php:256 setting/quicktag/ul.php:288
+msgid "Preview"
+msgstr "プレビュー"
+
+#: setting/google-maps.php:147
+msgid "API key"
+msgstr "APIキー"
+
+#: setting/google-maps.php:152
+msgid "Map color"
+msgstr "マップカラー"
+
+#: setting/google-maps.php:156
+msgid "Monochrome"
+msgstr "モノクロ"
+
+#: setting/google-maps.php:160
+msgid "Marker type"
+msgstr "マーカータイプ"
+
+#: setting/google-maps.php:169
+msgid "Marker text"
+msgstr "マーカーテキスト"
+
+#: setting/google-maps.php:171
+msgid "e.g.) Store name, etc."
+msgstr "例：企業名、店舗名など"
+
+#: setting/google-maps.php:174
+msgid "Marker image"
+msgstr "マーカー画像"
+
+#: setting/google-maps.php:180 setting/quicktag/box.php:337
+#: setting/quicktag/heading.php:591 setting/quicktag/ol.php:335
+#: setting/quicktag/ol.php:489 setting/quicktag/sb.php:284
+#: setting/quicktag/ul.php:315
+msgid "Font color"
+msgstr "文字色"
+
+#: setting/google-maps.php:186 setting/quicktag/box.php:361
+#: setting/quicktag/heading.php:631 setting/quicktag/heading.php:742
+#: setting/quicktag/ol.php:360 setting/quicktag/ol.php:496
+#: setting/quicktag/sb.php:297 setting/quicktag/ul.php:339
+msgid "Background color"
+msgstr "背景色"
+
+#: setting/quicktag.php:121
+msgid "The ability to add quick tags to the classic editor."
+msgstr "クラシックエディタにクイックタグを追加できる機能です。"
+
+#: setting/quicktag.php:122
+msgid ""
+"Add headings, lists, buttons, and other items you need to use your own quick "
+"tags."
+msgstr ""
+"見出しやリスト、ボタンなど、必要なアイテムを追加してあなただけのクイックタグ"
+"を利用できます。"
+
+#: setting/quicktag.php:123
+msgid ""
+"We have already designed presets for you to set up each quick tag. Please "
+"select the preset of your choice and then make your own adjustments."
+msgstr ""
+"各クイックタグを設定する際は、すでにデザイン済みのプリセットをご用意していま"
+"す。お好みのプリセットを選択してから、お客様自身でご調整ください。"
+
+#: setting/quicktag.php:142
+msgid "Registered Quicktags"
+msgstr "登録済みクイックタグ"
+
+#: setting/quicktag.php:169
+msgid "Add an item."
+msgstr "アイテムを追加してください。"
+
+#: setting/quicktag.php:180
+msgid "Quicktags you can add"
+msgstr "追加できるクイックタグ"
+
+#: setting/quicktag.php:219
+#, php-format
+msgid "%s Presets"
+msgstr "%sプリセット"
+
+#: setting/quicktag.php:222
+msgid "Close"
+msgstr "閉じる"
+
+#: setting/quicktag.php:227
+msgid "Hover the mouse cursor over the button to see the hover animation."
+msgstr "ボタンにマウスカーソルをあてると、ホバーアニメーションを確認できます。"
+
+#: setting/quicktag.php:254
+msgid "Load Preset"
+msgstr "プリセットを読み込む"
+
+#: setting/quicktag/box.php:44
+msgid "Box"
+msgstr "囲み枠"
+
+#: setting/quicktag/box.php:51 setting/quicktag/button.php:53
+#: setting/quicktag/heading.php:61 setting/quicktag/marker.php:47
+#: setting/quicktag/ol.php:54 setting/quicktag/sb.php:58
+#: setting/quicktag/ul.php:55
+#, php-format
+msgid "Sample %s"
+msgstr "サンプル%s"
+
+#: setting/quicktag/box.php:112 setting/quicktag/button.php:64
+#: setting/quicktag/heading.php:198 setting/quicktag/marker.php:58
+#: setting/quicktag/ol.php:118 setting/quicktag/sb.php:69
+#: setting/quicktag/ul.php:117
+#, php-format
+msgid "Custom %s"
+msgstr "カスタム%s"
+
+#: setting/quicktag/box.php:125 setting/quicktag/box.php:133
+#: setting/quicktag/box.php:147 setting/quicktag/box.php:165
+#: setting/quicktag/box.php:186 setting/quicktag/box.php:206
+#: setting/quicktag/box.php:227 setting/quicktag/button.php:100
+#: setting/quicktag/button.php:122 setting/quicktag/button.php:144
+#: setting/quicktag/button.php:166 setting/quicktag/button.php:188
+#: setting/quicktag/button.php:210 setting/quicktag/button.php:232
+#: setting/quicktag/heading.php:211 setting/quicktag/heading.php:219
+#: setting/quicktag/heading.php:237 setting/quicktag/heading.php:256
+#: setting/quicktag/heading.php:277 setting/quicktag/heading.php:299
+#: setting/quicktag/heading.php:323 setting/quicktag/heading.php:344
+#: setting/quicktag/heading.php:368 setting/quicktag/heading.php:390
+#: setting/quicktag/heading.php:412 setting/quicktag/heading.php:435
+#: setting/quicktag/heading.php:457 setting/quicktag/heading.php:481
+#: setting/quicktag/marker.php:73 setting/quicktag/marker.php:83
+#: setting/quicktag/marker.php:93 setting/quicktag/marker.php:103
+#: setting/quicktag/marker.php:113 setting/quicktag/marker.php:123
+#: setting/quicktag/marker.php:133 setting/quicktag/marker.php:143
+#: setting/quicktag/marker.php:153 setting/quicktag/ol.php:131
+#: setting/quicktag/ol.php:139 setting/quicktag/ol.php:154
+#: setting/quicktag/ol.php:172 setting/quicktag/ol.php:194
+#: setting/quicktag/ol.php:212 setting/quicktag/sb.php:99
+#: setting/quicktag/sb.php:119 setting/quicktag/sb.php:140
+#: setting/quicktag/sb.php:160 setting/quicktag/sb.php:181
+#: setting/quicktag/sb.php:201 setting/quicktag/ul.php:130
+#: setting/quicktag/ul.php:138 setting/quicktag/ul.php:153
+#: setting/quicktag/ul.php:168 setting/quicktag/ul.php:184
+#: setting/quicktag/ul.php:205
+#, php-format
+msgid "Preset %s"
+msgstr "プリセット%s"
+
+#: setting/quicktag/box.php:251 setting/quicktag/ul.php:226
+msgid "Custom preset (without icon)"
+msgstr "カスタムプリセット（アイコン無し）"
+
+#: setting/quicktag/box.php:264 setting/quicktag/ul.php:240
+msgid "Custom presets (with icons)"
+msgstr "カスタムプリセット（アイコンあり）"
+
+#: setting/quicktag/box.php:283 setting/quicktag/button.php:261
+#: setting/quicktag/cardlink.php:62 setting/quicktag/custom_tag.php:91
+#: setting/quicktag/gmap.php:63 setting/quicktag/heading.php:529
+#: setting/quicktag/marker.php:170 setting/quicktag/ol.php:281
+#: setting/quicktag/sb.php:231 setting/quicktag/ul.php:261
+msgid "Quicktag setting"
+msgstr "クイックタグ設定"
+
+#: setting/quicktag/box.php:290 setting/quicktag/button.php:268
+#: setting/quicktag/heading.php:536 setting/quicktag/marker.php:177
+#: setting/quicktag/ol.php:288 setting/quicktag/ul.php:268
+msgid "Class name"
+msgstr "クラス名"
+
+#: setting/quicktag/box.php:312 setting/quicktag/button.php:288
+#: setting/quicktag/heading.php:558 setting/quicktag/marker.php:196
+#: setting/quicktag/ol.php:310 setting/quicktag/sb.php:259
+#: setting/quicktag/ul.php:290
+msgid "Design Preset"
+msgstr "デザインプリセット"
+
+#: setting/quicktag/box.php:316 setting/quicktag/button.php:292
+#: setting/quicktag/heading.php:562 setting/quicktag/ol.php:314
+#: setting/quicktag/sb.php:263 setting/quicktag/ul.php:294
+msgid "Font size"
+msgstr "文字サイズ"
+
+#: setting/quicktag/box.php:329 setting/quicktag/button.php:305
+#: setting/quicktag/heading.php:583 setting/quicktag/marker.php:200
+#: setting/quicktag/ol.php:327 setting/quicktag/sb.php:276
+#: setting/quicktag/ul.php:307
+msgid "Font weight"
+msgstr "文字の太さ"
+
+#: setting/quicktag/box.php:347 setting/quicktag/heading.php:617
+#: setting/quicktag/ol.php:346 setting/quicktag/ul.php:325
+msgid "Background"
+msgstr "背景"
+
+#: setting/quicktag/box.php:350 setting/quicktag/heading.php:620
+#: setting/quicktag/ol.php:349 setting/quicktag/ul.php:328
+msgid "Background type"
+msgstr "背景のタイプ"
+
+#: setting/quicktag/box.php:353 setting/quicktag/box.php:392
+#: setting/quicktag/heading.php:623 setting/quicktag/heading.php:663
+#: setting/quicktag/heading.php:732 setting/quicktag/ol.php:352
+#: setting/quicktag/ol.php:394 setting/quicktag/ul.php:331
+#: setting/quicktag/ul.php:373
+msgid "None"
+msgstr "無し"
+
+#: setting/quicktag/box.php:354 setting/quicktag/heading.php:624
+#: setting/quicktag/heading.php:733 setting/quicktag/ol.php:353
+#: setting/quicktag/ul.php:332
+msgid "A single color"
+msgstr "単色"
+
+#: setting/quicktag/box.php:355 setting/quicktag/heading.php:625
+#: setting/quicktag/heading.php:667 setting/quicktag/heading.php:734
+#: setting/quicktag/ol.php:354 setting/quicktag/ul.php:333
+msgid "Gradation (horizontal)"
+msgstr "グラデーション（横）"
+
+#: setting/quicktag/box.php:356 setting/quicktag/heading.php:626
+#: setting/quicktag/heading.php:668 setting/quicktag/heading.php:735
+#: setting/quicktag/ol.php:355 setting/quicktag/ul.php:334
+msgid "Gradation (vertical)"
+msgstr "グラデーション（縦）"
+
+#: setting/quicktag/box.php:367 setting/quicktag/button.php:359
+#: setting/quicktag/heading.php:637 setting/quicktag/heading.php:681
+#: setting/quicktag/heading.php:749 setting/quicktag/ol.php:366
+#: setting/quicktag/ul.php:345
+msgid "Gradation 1"
+msgstr "グラデーション1"
+
+#: setting/quicktag/box.php:373 setting/quicktag/button.php:365
+#: setting/quicktag/heading.php:643 setting/quicktag/heading.php:688
+#: setting/quicktag/heading.php:756 setting/quicktag/ol.php:372
+#: setting/quicktag/ul.php:351
+msgid "Gradation 2"
+msgstr "グラデーション2"
+
+#: setting/quicktag/box.php:389 setting/quicktag/heading.php:660
+#: setting/quicktag/ol.php:391 setting/quicktag/ul.php:370
+msgid "Border style"
+msgstr "枠線のスタイル"
+
+#: setting/quicktag/box.php:393 setting/quicktag/heading.php:664
+#: setting/quicktag/ol.php:395 setting/quicktag/ul.php:374
+msgid "Solid"
+msgstr "実線"
+
+#: setting/quicktag/box.php:394 setting/quicktag/heading.php:665
+#: setting/quicktag/ol.php:396 setting/quicktag/ul.php:375
+msgid "Dotted line"
+msgstr "点線"
+
+#: setting/quicktag/box.php:395 setting/quicktag/heading.php:666
+#: setting/quicktag/ol.php:397 setting/quicktag/ul.php:376
+msgid "Dashed line"
+msgstr "破線"
+
+#: setting/quicktag/box.php:401 setting/quicktag/heading.php:674
+#: setting/quicktag/ol.php:403 setting/quicktag/sb.php:303
+#: setting/quicktag/ul.php:382
+msgid "Border color"
+msgstr "線の色"
+
+#: setting/quicktag/box.php:406 setting/quicktag/heading.php:707
+#: setting/quicktag/ol.php:408 setting/quicktag/ul.php:387
+msgid "Border width"
+msgstr "枠線の太さ"
+
+#: setting/quicktag/box.php:424 setting/quicktag/ul.php:405
+msgid "Icon"
+msgstr "アイコン"
+
+#: setting/quicktag/box.php:447 setting/quicktag/ul.php:437
+msgid "Selectable icons"
+msgstr "選べるアイコン"
+
+#: setting/quicktag/box.php:456 setting/quicktag/ul.php:446
+msgid "Custom icons (.png only)"
+msgstr "カスタムアイコン（.pngのみ可）"
+
+#: setting/quicktag/box.php:462 setting/quicktag/ul.php:452
+msgid "Icon color"
+msgstr "アイコンの色"
+
+#: setting/quicktag/box.php:475 setting/quicktag/heading.php:826
+#: setting/quicktag/ol.php:512 setting/quicktag/ul.php:466
+msgid "Padding"
+msgstr "パディング"
+
+#: setting/quicktag/box.php:494 setting/quicktag/ol.php:531
+#: setting/quicktag/ul.php:485
+msgid "Padding (top/bottom/left/right)"
+msgstr "内側の余白（上下左右）"
+
+#: setting/quicktag/box.php:515 setting/quicktag/button.php:374
+#: setting/quicktag/heading.php:900 setting/quicktag/ol.php:553
+#: setting/quicktag/sb.php:313 setting/quicktag/ul.php:506
+msgid "Margin"
+msgstr "マージン"
+
+#: setting/quicktag/box.php:517 setting/quicktag/button.php:376
+#: setting/quicktag/heading.php:902 setting/quicktag/ol.php:555
+#: setting/quicktag/sb.php:315 setting/quicktag/ul.php:508
+msgid "Margin top"
+msgstr "上の余白"
+
+#: setting/quicktag/box.php:530 setting/quicktag/button.php:390
+#: setting/quicktag/heading.php:916 setting/quicktag/ol.php:568
+#: setting/quicktag/sb.php:328 setting/quicktag/ul.php:521
+msgid "Margin bottom"
+msgstr "下の余白"
+
+#: setting/quicktag/button.php:34 setting/quicktag/button.php:45
+msgid "Button"
+msgstr "ボタン"
+
+#: setting/quicktag/button.php:313
+msgid "Shape"
+msgstr "シェイプ"
+
+#: setting/quicktag/button.php:321
+msgid "Button size (pc)"
+msgstr "ボタンサイズ（PC）"
+
+#: setting/quicktag/button.php:334
+msgid "Button size (mobile)"
+msgstr "ボタンサイズ（スマホ）"
+
+#: setting/quicktag/button.php:347
+msgid "Button color"
+msgstr "カラー"
+
+#: setting/quicktag/button.php:353
+msgid "Button hover color"
+msgstr "ホバーカラー"
+
+#: setting/quicktag/cardlink.php:19 setting/quicktag/custom_tag.php:25
+#: setting/quicktag/gmap.php:19 setting/quicktag/heading.php:29
+#: setting/quicktag/ol.php:19 setting/quicktag/sb.php:19
+#: setting/quicktag/ul.php:20
+#, php-format
+msgid "%s is registered in the TCD Classic Editor."
+msgstr "TCDクラシックエディタで登録された%sです。"
+
+#: setting/quicktag/cardlink.php:19 setting/quicktag/cardlink.php:43
+msgid "Cardlink"
+msgstr "カードリンク"
+
+#: setting/quicktag/cardlink.php:24 setting/quicktag/cardlink.php:34
+msgid "Enter the article URL you want to display here"
+msgstr "ここに表示させたい記事URLを入力"
+
+#: setting/quicktag/cardlink.php:70
+msgid "List of available shortcodes"
+msgstr "使えるショートコード一覧"
+
+#: setting/quicktag/cardlink.php:79
+msgid "Basic shortcode to display card links by entering a URL"
+msgstr "URLを入力してカードリンクを表示する基本のショートコード"
+
+#: setting/quicktag/cardlink.php:89
+msgid "Option to hide card link dates"
+msgstr "カードリンクの日付を非表示にできるオプション付き"
+
+#: setting/quicktag/cardlink.php:99
+msgid "Option to hide only the update date of card links"
+msgstr "カードリンクの更新日付だけを非表示にできるオプション付き"
+
+#: setting/quicktag/custom_tag.php:25 setting/quicktag/custom_tag.php:69
+msgid "Custom tag"
+msgstr "カスタムタグ"
+
+#: setting/quicktag/custom_tag.php:100
+msgid "HTML tag to register"
+msgstr "登録するHTMLタグ"
+
+#: setting/quicktag/custom_tag.php:103
+msgid "Separate HTML into start and end tags"
+msgstr "HTMLを開始タグと終了タグに分ける"
+
+#: setting/quicktag/custom_tag.php:106
+msgid "HTML entry field"
+msgstr "HTML記入欄"
+
+#: setting/quicktag/custom_tag.php:112
+msgid "Start tag"
+msgstr "開始タグ"
+
+#: setting/quicktag/custom_tag.php:118
+msgid "End tag"
+msgstr "終了タグ"
+
+#: setting/quicktag/custom_tag.php:126
+msgid "Style to register"
+msgstr "登録するスタイル"
+
+#: setting/quicktag/custom_tag.php:128
+msgid "CSS entry field"
+msgstr "CSS記入欄"
+
+#: setting/quicktag/gmap.php:24
+msgid "Enter your address here"
+msgstr "住所をここに入力"
+
+#: setting/quicktag/gmap.php:70
+#, php-format
+msgid ""
+"To use Google Maps, you must register an API key in %1$sGoogle Maps "
+"settings%2$s."
+msgstr ""
+"Google Mapsを利用するためには、%1$sGoogle Maps設定%2$sでAPIキーを登録する必要"
+"があります。"
+
+#: setting/quicktag/gmap.php:82 setting/quicktag/sb.php:238
+msgid "Shortcode"
+msgstr "ショートコード"
+
+#: setting/quicktag/heading.php:12
+msgid "H2"
+msgstr "見出しH2"
+
+#: setting/quicktag/heading.php:13
+msgid "H3"
+msgstr "見出しH3"
+
+#: setting/quicktag/heading.php:14
+msgid "H4"
+msgstr "見出しH4"
+
+#: setting/quicktag/heading.php:15
+msgid "H5"
+msgstr "見出しH5"
+
+#: setting/quicktag/heading.php:16
+msgid "H6"
+msgstr "見出しH6"
+
+#: setting/quicktag/heading.php:503
+msgid "Custom presets (for advanced users)"
+msgstr "カスタムプリセット（上級者向け）"
+
+#: setting/quicktag/heading.php:575
+msgid "Text align"
+msgstr "文字の整列"
+
+#: setting/quicktag/heading.php:596
+msgid "Font family"
+msgstr "フォント"
+
+#: setting/quicktag/heading.php:599
+msgid "Sans serif"
+msgstr "ゴシック"
+
+#: setting/quicktag/heading.php:600
+msgid "Serif"
+msgstr "明朝"
+
+#: setting/quicktag/heading.php:604 setting/quicktag/heading.php:769
+msgid "Width"
+msgstr "横幅"
+
+#: setting/quicktag/heading.php:607
+msgid "Full width"
+msgstr "横幅いっぱい"
+
+#: setting/quicktag/heading.php:608
+msgid "Text width"
+msgstr "テキスト幅"
+
+#: setting/quicktag/heading.php:695
+msgid "Border position"
+msgstr "枠線の表示位置"
+
+#: setting/quicktag/heading.php:698
+msgid "All"
+msgstr "すべて"
+
+#: setting/quicktag/heading.php:699
+msgid "Top"
+msgstr "上"
+
+#: setting/quicktag/heading.php:700
+msgid "Left"
+msgstr "左"
+
+#: setting/quicktag/heading.php:701
+msgid "Bottom"
+msgstr "下"
+
+#: setting/quicktag/heading.php:702
+msgid "Top & Bottom"
+msgstr "上下"
+
+#: setting/quicktag/heading.php:725
+msgid "Element"
+msgstr "エレメント"
+
+#: setting/quicktag/heading.php:729
+msgid "Element type"
+msgstr "エレメントタイプ"
+
+#: setting/quicktag/heading.php:736 setting/quicktag/heading.php:763
+msgid "Image"
+msgstr "画像"
+
+#: setting/quicktag/heading.php:784
+msgid "Height"
+msgstr "高さ"
+
+#: setting/quicktag/heading.php:799
+msgid "Align horizontal"
+msgstr "横の配置"
+
+#: setting/quicktag/heading.php:810
+msgid "Align vertical"
+msgstr "縦の配置"
+
+#: setting/quicktag/heading.php:839
+msgid "Padding top"
+msgstr "内側の余白（上）"
+
+#: setting/quicktag/heading.php:853
+msgid "Padding right"
+msgstr "内側の余白（右）"
+
+#: setting/quicktag/heading.php:867
+msgid "Padding bottom"
+msgstr "内側の余白（下）"
+
+#: setting/quicktag/heading.php:881
+msgid "Padding left"
+msgstr "内側の余白（左）"
+
+#: setting/quicktag/marker.php:39 setting/quicktag/ol.php:426
+msgid "Marker"
+msgstr "マーカー"
+
+#: setting/quicktag/marker.php:208
+msgid "Marker color"
+msgstr "マーカー色"
+
+#: setting/quicktag/marker.php:213
+msgid "Marker weight"
+msgstr "マーカーの太さ"
+
+#: setting/quicktag/marker.php:221
+msgid "Animation"
+msgstr "アニメーション"
+
+#: setting/quicktag/ol.php:19 setting/quicktag/ol.php:37
+#: setting/quicktag/ol.php:47
+msgid "Ordered list"
+msgstr "番号リスト"
+
+#: setting/quicktag/ol.php:234
+msgid "Custom (default number)"
+msgstr "カスタム（デフォルト数字）"
+
+#: setting/quicktag/ol.php:241
+msgid "Custom (leading zero)"
+msgstr "カスタム（0埋め数字）"
+
+#: setting/quicktag/ol.php:258
+msgid "Custom (number with background)"
+msgstr "カスタムプリセット（背景あり数字）"
+
+#: setting/quicktag/sb.php:19 setting/quicktag/sb.php:44
+msgid "Speech bubble"
+msgstr "吹き出し"
+
+#: setting/quicktag/sb.php:24
+msgid "Enter text here"
+msgstr "本文をここに入力"
+
+#: setting/quicktag/sb.php:53 setting/quicktag/sb.php:71
+#: setting/quicktag/sb.php:289
+msgid "User name"
+msgstr "ユーザー名"
+
+#: setting/quicktag/sb.php:293
+msgid "User image"
+msgstr "ユーザー画像"
+
+#: setting/quicktag/ul.php:20 setting/quicktag/ul.php:38
+#: setting/quicktag/ul.php:48
+msgid "Unordered list"
+msgstr "通常リスト"
+
+#: setting/start-guide.php:18
+msgid ""
+"This plugin is the perfect extension for those who want to use the Classic "
+"Editor more conveniently."
+msgstr ""
+"このプラグインは、クラシックエディタをもっと便利に使いたい方にぴったりの拡張"
+"ツールです。"
+
+#: setting/start-guide.php:19
+msgid ""
+"The added quick tags can also be utilized in the block editor, so you can "
+"work comfortably in both the old and new editing screens."
+msgstr ""
+"追加したクイックタグはブロックエディタでも活用できるので、新旧どちらの編集画"
+"面でも快適に作業できます。"
+
+#: setting/start-guide.php:22
+msgid ""
+"By setting up the following four steps in order, you will have an easy-to-"
+"use editor that you will like. Please give it a try."
+msgstr ""
+"下記の4つのステップを順番に設定していくと、あなた好みの使いやすいエディタが完"
+"成します。ぜひお試しください。"
+
+#: setting/start-guide.php:30
+msgid "First, set the base style, such as font size."
+msgstr "最初に文字サイズなどのベーススタイルを設定しましょう。"
+
+#: setting/start-guide.php:35
+msgid ""
+"Set up various decorative parts to decorate articles, such as headlines, "
+"buttons, markers, etc."
+msgstr ""
+"見出しやボタン、マーカーなど、記事を彩るさまざまな装飾パーツを設定します。"
+
+#: setting/start-guide.php:40
+msgid ""
+"Customized maps can be inserted into articles using the Google Maps API. "
+"(API key required)"
+msgstr ""
+"Google Maps API を利用して、記事内にカスタマイズした地図を挿入できます。（API"
+"キーが必要）"
+
+#: setting/start-guide.php:45
+msgid ""
+"The table of contents is automatically generated according to the headings "
+"entered."
+msgstr "入力した見出しに応じて目次を自動生成します。"
+
+#: setting/start-guide.php:62
+msgid "Open Settings"
+msgstr "設定を開く"
+
+#: setting/table-of-contents.php:80
+msgid ""
+"This function allows you to display the table of contents within the body "
+"(above the first h2 heading) and in the sidebar (using the table of contents "
+"widget)."
+msgstr ""
+"本文内（最初のh2見出しの上）とサイドバー（目次ウィジェットを利用）に目次を表"
+"示できる機能です。"
+
+#: setting/table-of-contents.php:81
+msgid ""
+"The number and level of headings will be automatically displayed. (The table "
+"of contents does not use quick tags.)"
+msgstr ""
+"見出しの数やレベルに応じて、自動で表示されます。（目次はクイックタグを使いま"
+"せん。）"
+
+#: setting/table-of-contents.php:82
+msgid ""
+"On mobile phones, the table of contents can be displayed by clicking the "
+"icon in the lower right corner of the screen."
+msgstr "スマホ時は画面右下のアイコンをクリックして目次を表示できます。"
+
+#: setting/table-of-contents.php:99
+msgid "Display Settings"
+msgstr "表示設定"
+
+#: setting/table-of-contents.php:100
+msgid "Sets the location where the table of contents is displayed."
+msgstr "目次を表示する場所を設定します。"
+
+#: setting/table-of-contents.php:108
+msgid "Hide"
+msgstr "表示しない"
+
+#: setting/table-of-contents.php:109
+msgid "Show in post content"
+msgstr "本文に表示"
+
+#: setting/table-of-contents.php:110
+msgid "Show in sidebar"
+msgstr "サイドバーに表示"
+
+#: setting/table-of-contents.php:111
+msgid "Show in post content and sidebar"
+msgstr "本文とサイドバーに表示"
+
+#: setting/table-of-contents.php:124
+msgid "Check the post type for which you want the table of contents to appear."
+msgstr "目次を表示する投稿タイプにチェックを入れてください。"
+
+#: setting/table-of-contents.php:166
+msgid ""
+"If there are X or more headings in an article, a table of contents is "
+"created."
+msgstr "記事内の見出しがX個以上あれば目次を作成します。"
+
+#: setting/table-of-contents.php:183
+msgid "The selected heading tags will be included in the table of contents."
+msgstr "選択した見出しタグが目次に含まれます。"
+
+#: setting/table-of-contents.php:201
+msgid "Table of Contents Label"
+msgstr "目次のラベル"
+
+#: setting/table-of-contents.php:202
+msgid "Fill in the label to be displayed at the top of the table of contents."
+msgstr "目次上部に表示するラベルを記入します。"
+
+#: tcd-classic-editor.php:65
+msgid "This is a classic editor extension plug-in for TCD users."
+msgstr "TCDユーザー向けのクラシックエディタ拡張プラグインです。"
+
+#: theme-support/tcd.php:142
+msgid ""
+"The \"Quick Tags\" feature of the TCD theme is not available while this "
+"plugin is activated."
+msgstr ""
+"このプラグインを有効化している間、TCDテーマの「クイックタグ」機能は利用できま"
+"せん。"
+
+#: theme-support/tcd.php:155
+msgid "Basic settings are not available for this theme."
+msgstr "このテーマでは、基本設定はお使いいただけません。"
+
+#: theme-support/tcd.php:156
+msgid "The settings in the TCD theme options will be applied."
+msgstr "TCDテーマオプションの設定が反映されます。"
+
+#: theme-support/tcd.php:170
+msgid ""
+"Since this theme already has a table of contents feature, the plugin's table "
+"of contents feature cannot be used."
+msgstr ""
+"このテーマにはすでに目次機能が備わっているため、プラグインの目次機能を利用で"
+"きません。"
+
+#: theme-support/tcd.php:184
+msgid "This theme cannot display a table of contents in the sidebar."
+msgstr "このテーマでは、サイドバーに目次を表示できません。"
+
+#~ msgid "Failed to create JSON data for export."
+#~ msgstr "エクスポート用 JSON データ作成に失敗しました。"
+
+#~ msgid ""
+#~ "The “Quick Tags” feature of the TCD theme is not available while this "
+#~ "plugin is activated."
+#~ msgstr ""
+#~ "このプラグインを有効化している間、TCDテーマの「クイックタグ」機能は利用で"
+#~ "きません。"
