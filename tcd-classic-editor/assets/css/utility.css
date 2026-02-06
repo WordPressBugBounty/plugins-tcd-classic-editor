@@ -2090,6 +2090,12 @@ img.frame {
   }
 }
 
+/* rounded corners */
+.rc10 {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
 /* scroll table */
 @media (max-width: 767px) {
   .s_table {

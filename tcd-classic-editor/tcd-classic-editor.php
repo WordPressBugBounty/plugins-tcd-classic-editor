@@ -3,7 +3,7 @@
  * Plugin Name: TCD Classic Editor
  * Plugin URI:
  * Description: This is a classic editor extension plug-in for TCD users.
- * Version: 1.2.12
+ * Version: 1.3.3
  * Author: TCD
  * Author URI: https://tcd-theme.com/
  * License: GPLv2 or later
@@ -95,6 +95,7 @@ require_once TCDCE_PATH . 'setting/quicktag/box.php';
 require_once TCDCE_PATH . 'setting/quicktag/marker.php';
 require_once TCDCE_PATH . 'setting/quicktag/button.php';
 require_once TCDCE_PATH . 'setting/quicktag/sb.php';
+require_once TCDCE_PATH . 'setting/quicktag/heading_label.php';
 require_once TCDCE_PATH . 'setting/quicktag/cardlink.php';
 require_once TCDCE_PATH . 'setting/quicktag/gmap.php';
 require_once TCDCE_PATH . 'setting/quicktag/custom_tag.php';

@@ -485,6 +485,17 @@ function initQtPreview($) {
               target.find(".js-tcdce-preview-option--text-target").text(value);
             }
 
+            // text
+            if ($(this).hasClass("js-tcdce-preview-target--pseudo-text")) {
+              // 疑似要素内のテキストが改行を反映させる
+              const escaped = value
+                .replace(/\\/g, "\\\\")
+                .replace(/"/g, '\\"')
+                // 英字入力時の文字化けをふせぐため、\A の後に空白を入れる
+                .replace(/\r\n|\r|\n/g, "\\A ");
+              value = `"${escaped}"`;
+            }
+
             // プロパティがなければスキップ
             if (!property) {
               return true;

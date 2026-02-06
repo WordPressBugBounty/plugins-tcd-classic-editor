@@ -82,7 +82,7 @@ if ( ! class_exists( 'TCDCE_Toc_Widget' ) ) {
       // カウント
       $toc_count = ! empty( $tcdce_toc['count'] ) ? $tcdce_toc['count'] : 2;
       /* translators: %s: target heading count */
-      $toc_count_label = sprintf( __( 'Display with %s or more', 'tcd-classic-editor' ), $toc_count );
+      $toc_count_label = sprintf( __( 'Display %s or more headings. Not displayed on mobile.', 'tcd-classic-editor' ), $toc_count );
 
       // 見出し
       $toc_range = ! empty( $tcdce_toc['range'] ) ? $tcdce_toc['range'] : '2';

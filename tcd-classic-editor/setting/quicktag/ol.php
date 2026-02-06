@@ -61,7 +61,7 @@ add_action( 'tcdce_qt_fields_set_properties', function( $instance ) {
      * ベース
      */
     '--tcdce-ol-font-size-pc' => 16,
-    '--tcdce-ol-font-size-sp' => 14,
+    '--tcdce-ol-font-size-sp' => 16,
     '--tcdce-ol-font-weight' => 'var(--tcdce-opt-font-weight-normal)',
     '--tcdce-ol-font-color' => '#000000',
     /**

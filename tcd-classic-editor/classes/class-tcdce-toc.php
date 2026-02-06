@@ -325,7 +325,7 @@ if ( ! class_exists( 'TCDCE_Toc' ) ) {
           @media (max-width: %1$spx) {
             .widget_tcdce_toc_widget { display: none; }
           }
-        </style>',
+        </style>' . "\n", // 改行を追加してCSS圧縮時のバグを防止
         esc_attr( $media_query )
       );
     }

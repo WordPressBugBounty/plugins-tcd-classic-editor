@@ -15,11 +15,11 @@
   --tcdce-half-leading: calc((1em - 1lh) / 2);
 
   /* オプション */
-  --tcdce-opt-font-type-serif: "Times New Roman", times, "游明朝", "Yu Mincho",
-    "游明朝体", "YuMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro",
-    "HiraMinProN-W3", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  --tcdce-opt-font-type-sans-serif: Arial, "Hiragino Kaku Gothic ProN",
-    "Hiragino Sans", Meiryo, sans-serif;
+  --tcdce-opt-font-type-serif: "Times New Roman", Times, "Yu Mincho", "游明朝",
+    "游明朝体", "Hiragino Mincho Pro", serif, "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  --tcdce-opt-font-type-sans-serif: Arial, "Hiragino Sans", "Yu Gothic Medium",
+    "Meiryo", sans-serif;
   --tcdce-opt-font-weight-normal: 400;
   --tcdce-opt-font-weight-bold: 600;
   --tcdce-opt-inset-block-top: 0 auto;
@@ -348,7 +348,7 @@
 
   /* ul */
   --tcdce-ul-font-size-pc: 16px;
-  --tcdce-ul-font-size-sp: 14px;
+  --tcdce-ul-font-size-sp: 16px;
   --tcdce-ul-font-weight: normal;
   --tcdce-ul-font-color: var(--tcdce-base-font-color);
   /* 背景 */
@@ -380,7 +380,7 @@
 
   /* ol */
   --tcdce-ol-font-size-pc: 16px;
-  --tcdce-ol-font-size-sp: 14px;
+  --tcdce-ol-font-size-sp: 16px;
   --tcdce-ol-font-weight: normal;
   --tcdce-ol-font-color: var(--tcdce-base-font-color);
   /* 背景 */
@@ -573,7 +573,7 @@
 }
 
 :is(.tcdce-body, .editor-styles-wrapper) .aligncenter {
-  display: table;
+  display: block;
   margin-right: auto;
   margin-bottom: 7px;
   margin-left: auto;
@@ -581,7 +581,8 @@
 
 :is(.tcdce-body, .editor-styles-wrapper) blockquote.alignleft,
 :is(.tcdce-body, .editor-styles-wrapper) img.alignleft {
-  margin: 7px 24px 7px 0;
+  margin: 0px 24px
+    calc(var(--tcdce-base-margin-bottom-pc) + var(--tcdce-half-leading)) 0px;
 }
 
 :is(.tcdce-body, .editor-styles-wrapper) .wp-caption.alignleft {
@@ -590,7 +591,8 @@
 
 :is(.tcdce-body, .editor-styles-wrapper) blockquote.alignright,
 :is(.tcdce-body, .editor-styles-wrapper) img.alignright {
-  margin: 7px 0 7px 24px;
+  margin: 0px 0px
+    calc(var(--tcdce-base-margin-bottom-pc) + var(--tcdce-half-leading)) 24px;
 }
 
 :is(.tcdce-body, .editor-styles-wrapper) .wp-caption.alignright {
@@ -602,6 +604,24 @@
 :is(.tcdce-body, .editor-styles-wrapper) .wp-caption.aligncenter {
   margin-top: 7px;
   margin-bottom: 7px;
+}
+
+/* ブロックエディタの一部コンテンツの中央寄せに対応 */
+:is(.tcdce-body, .editor-styles-wrapper)
+  :is(
+    .wp-block-image .aligncenter,
+    .wp-block-image .alignleft,
+    .wp-block-image .alignright,
+    .wp-block-image.aligncenter,
+    .wp-block-image.alignleft,
+    .wp-block-image.alignright
+  ) {
+  display: table;
+}
+
+/* Xの埋め込みの中央寄せ対応 */
+:is(.tcdce-body, .editor-styles-wrapper) .wp-block-embed-twitter {
+  display: table;
 }
 
 /* paragraph */
@@ -2270,6 +2290,76 @@
 
   .tcdce-card__desc {
     display: none;
+  }
+}
+
+/* ラベル付き見出し */
+:is(.tcdce-body, .editor-styles-wrapper) .tcdce-heading-label {
+  display: flex;
+  align-items: center;
+  font-size: var(--tcdce-heading_label-font-size-pc, 24px);
+  font-weight: var(
+    --tcdce-heading_label-font-weight,
+    var(--tcdce-opt-font-weight-bold)
+  );
+  color: var(--tcdce-heading_label-font-color, #000000);
+  font-family: var(--tcdce-heading_label-font-family, inherit);
+  text-align: left;
+  line-height: 1.7;
+}
+
+:is(.tcdce-body, .editor-styles-wrapper) .tcdce-heading-label:before {
+  content: var(--tcdce-heading_label-element-text, "");
+  display: grid;
+  flex: 0 0 100px;
+  height: 100px;
+  place-items: center;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 600;
+  white-space: pre-wrap;
+  padding: 8px;
+  color: var(--tcdce-heading_label-element-color, #ffffff);
+  background: var(--tcdce-heading_label-element-background, #000000);
+  border-radius: var(--tcdce-heading_label-element-border-radius, 50%);
+  position: relative;
+  inset: initial;
+  margin: initial;
+  margin-right: 30px;
+}
+
+:is(.tcdce-body, .editor-styles-wrapper)
+  .tcdce-heading-label[data-label]:before {
+  content: attr(data-label);
+}
+
+:is(.tcdce-body, .editor-styles-wrapper) * + .tcdce-heading-label {
+  margin-top: var(--tcdce-heading_label-margin-top-pc);
+}
+
+:is(.tcdce-body, .editor-styles-wrapper) .tcdce-heading-label:has(+ *) {
+  margin-bottom: var(--tcdce-heading_label-margin-bottom-pc);
+}
+
+@container tcdce (max-width: 600px) {
+  :is(.tcdce-body, .editor-styles-wrapper) .tcdce-heading-label {
+    font-size: var(--tcdce-heading_label-font-size-sp, 18px);
+  }
+
+  :is(.tcdce-body, .editor-styles-wrapper) .tcdce-heading-label:before {
+    flex: 0 0 80px;
+    height: 80px;
+    font-size: 12px;
+    margin-right: 20px;
+  }
+
+  :is(.tcdce-body, .editor-styles-wrapper) * + .tcdce-heading-label {
+    margin-top: var(--tcdce-heading_label-margin-top-sp);
+  }
+
+  :is(.tcdce-body, .editor-styles-wrapper) .tcdce-heading-label:has(+ *) {
+    margin-bottom: var(--tcdce-heading_label-margin-bottom-sp);
   }
 }
 

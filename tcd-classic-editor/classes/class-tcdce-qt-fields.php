@@ -241,6 +241,7 @@ if ( ! class_exists( 'TCDCE_Qt_Fields' ) ) {
           name="' . esc_attr( $base_name . '[' . $property . ']' ) . '"
           rows="' . esc_attr( $rows ) . '"
           placeholder="' . esc_attr( $placeholder ) . '"
+          data-property="' . esc_attr( $property ) . '"
         >' .
         $base_value[$property] .
         '</textarea>

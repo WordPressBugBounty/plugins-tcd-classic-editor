@@ -504,6 +504,7 @@ input[type="file"]:not([data-file="1"]) + .tcdce-setting-data-form-button {
   background-position: right 10px top 50% !important;
 }
 
+.tcdce-select-box:focus,
 .tcdce-select-box:hover {
   color: inherit !important;
 }
@@ -1732,6 +1733,15 @@ body.is-modal-open {
   content: "\e90e";
 }
 
+.dashicons-tcdce-heading_label:before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 -960 960 960"><path d="M455.38-710h-190q-10.25 0-17.43-7.21-7.18-7.2-7.18-17.5 0-10.29 7.18-17.79t17.43-7.5h430q10.26 0 17.44 7.21 7.18 7.2 7.18 17.5 0 10.29-7.18 17.79t-17.44 7.5h-190v485.38q0 10.26-7.2 17.44-7.21 7.18-17.5 7.18-10.3 0-17.8-7.4-7.5-7.41-7.5-17.98V-710Z"/></svg>')
+    no-repeat center / 1em;
+  background-color: currentColor;
+}
+
 /* UI表示切り替え */
 
 /* 見出し */
@@ -1971,5 +1981,11 @@ body.is-modal-open {
 .tcdce-edit__options:has(input[value="preset03"]) :is(.tcdce-sb-border-color, ),
 .tcdce-edit__options:has(input[value="preset04"])
   :is(.tcdce-sb-border-color, ) {
+  display: none;
+}
+
+/* ラベルの見出しプリセット別 */
+.tcdce-edit__options:has(input[value="preset01"])
+  :is(.tcdce-heading_label-border-color) {
   display: none;
 }

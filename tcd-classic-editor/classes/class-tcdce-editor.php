@@ -370,6 +370,18 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 								$value = $value . 'px';
 							}
 
+							// ラベル付き見出し
+							if( $quicktag['item'] == 'heading_label' && $property === '--tcdce-heading_label-element-text' ){
+								 // バックスラッシュをエスケープ
+								$text = str_replace('\\', '\\\\', $value);
+								// ダブルクォートをエスケープ
+								$text = str_replace('"', '\"', $text);
+								// 改行コードを \A に統一、次に続く文字が英字だと文字化けするので\Aの後に空白を入れる
+								$text = preg_replace("/\r\n|\r|\n/", '\\A ', $text);
+								// CSSのcontent用にダブルクォートで囲む
+								$value = '\'' . $text . '\'';
+							}
+
 							$css .= $property . ':' . $value . ';';
 						}
 
@@ -386,7 +398,6 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 			}
 
 			return apply_filters( 'tcdce_render_quicktag_style', $css );
-
 		}
 
 		/**
