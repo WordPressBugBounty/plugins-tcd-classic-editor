@@ -1708,6 +1708,7 @@
   transition-property: color;
   transition-duration: 0.3s;
   transition-timing-function: ease;
+  background-color: unset;
 }
 
 :is(.tcdce-body, .editor-styles-wrapper)
@@ -1758,6 +1759,34 @@
   transition-duration: 0.3s;
   transition-timing-function: ease;
 }
+
+:is(.tcdce-body, .editor-styles-wrapper)
+  :is(
+    .q_custom_button,
+    .q_custom_button1,
+    .q_custom_button2,
+    .q_custom_button3,
+    .q_button,
+    .wp-block-button__link
+  ):not(.wp-block-button):before {
+background:unset;
+}
+
+:is(.tcdce-body, .editor-styles-wrapper)
+  :is(
+    .tcdce-button,
+    .q_custom_button,
+    .q_custom_button1,
+    .q_custom_button2,
+    .q_custom_button3,
+    .q_button
+  ):before,
+:is(.tcdce-body, .editor-styles-wrapper)
+  .wp-block-button[class*=" "] > .wp-block-button__link:before {
+  background: var(--tcdce-button-background);
+}
+
+:is(.tcdce-body, .editor-styles-wrapper) .wp-block-button[class*=" "]:has(.has-background) > .wp-block-button__link::before{ background: unset;}
 
 @media (any-hover: hover) {
   :is(.tcdce-body, .editor-styles-wrapper)
@@ -2912,6 +2941,7 @@
 :is(.tcdce-body, .editor-styles-wrapper) .wp-block-file:not(.wp-element-button),
 :is(.tcdce-body, .editor-styles-wrapper) .wp-block-file__content-wrapper {
   display: flex;
+  flex-wrap: wrap;
   font-size: inherit;
   line-height: 1.4;
 }
