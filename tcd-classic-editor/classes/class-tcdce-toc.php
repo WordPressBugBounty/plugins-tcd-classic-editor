@@ -129,6 +129,11 @@ if ( ! class_exists( 'TCDCE_Toc' ) ) {
         return;
       }
 
+      // WooCommerceの購入フロー中は表示しない
+      if ( class_exists('WooCommerce') && (is_cart() || is_checkout() || is_order_received_page()) ){
+        return;
+      }
+
       // 目次生成
       $this->set_output();
 

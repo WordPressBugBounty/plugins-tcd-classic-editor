@@ -2,8 +2,8 @@
 Contributors: DesignPlus
 Tags: quicktag, editor, tinymce, classic editor, block editor
 Requires at least: 6.7
-Tested up to: 6.8
-Stable tag: 1.3.4
+Tested up to: 7.0
+Stable tag: 1.3.5
 Requires PHP: 8.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -46,6 +46,9 @@ The Google Maps API is used to embed maps on your website. Your API key is sent 
 1. Quick Tag Registration
 
 == Changelog ==
+
+= 1.3.5 =
+* Minor bug fixes and improvements
 
 = 1.3.4 =
 * Minor bug fixes and improvements
