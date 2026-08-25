@@ -1959,6 +1959,8 @@ background:unset;
   background: var(--tcdce-sb-background);
 }
 
+:is(.tcdce-body, .editor-styles-wrapper) .tcdce-sb-content p:last-child { margin-bottom:0; }
+
 @container tcdce (max-width: 600px) {
   :is(.tcdce-body, .editor-styles-wrapper) * + .tcdce-sb {
     margin-top: var(--tcdce-sb-margin-top-sp);

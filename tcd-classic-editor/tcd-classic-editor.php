@@ -3,7 +3,7 @@
  * Plugin Name: TCD Classic Editor
  * Plugin URI:
  * Description: This is a classic editor extension plug-in for TCD users.
- * Version: 1.3.5
+ * Version: 1.3.6
  * Author: TCD
  * Author URI: https://tcd-theme.com/
  * License: GPLv2 or later
