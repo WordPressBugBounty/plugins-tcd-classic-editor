@@ -1189,7 +1189,7 @@
   }
 
   :is(.tcdce-body, .editor-styles-wrapper) h5:has(+ *) {
-    margin-bottom: var(--tcdce-5-margin-bottom-sp);
+    margin-bottom: var(--tcdce-h5-margin-bottom-sp);
   }
 }
 
@@ -1296,7 +1296,7 @@
   }
 
   :is(.tcdce-body, .editor-styles-wrapper) h6:has(+ *) {
-    margin-bottom: var(--tcdce-5-margin-bottom-sp);
+    margin-bottom: var(--tcdce-h6-margin-bottom-sp);
   }
 }
 
