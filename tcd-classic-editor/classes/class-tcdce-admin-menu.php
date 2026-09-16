@@ -141,6 +141,16 @@ if ( ! class_exists( 'TCDCE_Admin_Menu' ) ) {
      * 管理画面で使うcss&jsの読み込み
      */
     public function admin_enqueue_assets( $hook_suffix ) {
+			global $plugin_page;
+
+			$menu_slugs = array_merge(
+				array( $this->menu_slug ),
+				array_column( $this->submenus, 'slug' )
+			);
+
+			if ( ! in_array( $plugin_page, $menu_slugs, true ) ) {
+				return;
+			}
 
 			// editor style
 			wp_enqueue_style( 'tcdce-editor', TCDCE_URL . 'assets/css/editor.css', array(), filemtime( TCDCE_PATH . 'assets/css/editor.css' ) );

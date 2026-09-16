@@ -71,11 +71,6 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 			remove_action( 'init', 'tcd_quicktag_front_init' );
 			remove_action( 'admin_init', 'tcd_quicktag_admin_init' );
 
-			// editor-stylesの有効化
-			if( ! current_theme_supports( 'editor-styles' ) ){
-				add_theme_support('editor-styles');
-			}
-
 			// the_content フィルター
 			add_filter( 'the_content', array( $this, 'the_content' ), 10 );
 
@@ -195,14 +190,12 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 			// tinymceのbodyにclass追加
 			add_filter( 'tiny_mce_before_init', array( $this, 'mce_add_body_class' ), 10, 2 );
 
+			// tinymceのエディター用スタイル
+			add_filter( 'mce_css', array( $this, 'mce_add_stylesheets' ) );
+
 			// ビジュアルエディター用スタイル（ajax）
 			add_action( 'wp_ajax_' . $this->ajax_action, array( $this, 'ajax_quicktag_dynamic_css' ) );
 
-			// エディタースタイル
-			add_editor_style( TCDCE_URL . 'assets/css/utility.css?d='.gmdate( 'YmdGis', filemtime( TCDCE_PATH . 'assets/css/utility.css' ) ) );
-			add_editor_style( TCDCE_URL . 'assets/css/editor.css?d='.gmdate( 'YmdGis', filemtime( TCDCE_PATH . 'assets/css/editor.css' ) ) );
-			add_editor_style( TCDCE_URL . 'assets/css/old-style.css?d='.gmdate( 'YmdGis', filemtime( TCDCE_PATH . 'assets/css/old-style.css' ) ) );
-			add_editor_style( $this->ajax_url );
 		}
 
 
@@ -323,6 +316,28 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
     public function mce_add_body_class( $mce_init, $editor_id ) {
 			$mce_init['body_class'] = 'tcdce-body';
 			return $mce_init;
+		}
+
+
+		/**
+		 * TinyMCEにエディター用スタイルを追加する
+		 *
+		 * add_editor_style()を使用すると、ブロックエディターではWordPressが
+		 * 絶対URLを内部HTTPリクエストで取得するため、TinyMCE専用のフィルターを使用する。
+		 */
+		public function mce_add_stylesheets( $mce_css ) {
+			$stylesheets = array(
+				TCDCE_URL . 'assets/css/utility.css?d=' . gmdate( 'YmdGis', filemtime( TCDCE_PATH . 'assets/css/utility.css' ) ),
+				TCDCE_URL . 'assets/css/editor.css?d=' . gmdate( 'YmdGis', filemtime( TCDCE_PATH . 'assets/css/editor.css' ) ),
+				TCDCE_URL . 'assets/css/old-style.css?d=' . gmdate( 'YmdGis', filemtime( TCDCE_PATH . 'assets/css/old-style.css' ) ),
+				$this->ajax_url,
+			);
+
+			if ( $mce_css ) {
+				array_unshift( $stylesheets, $mce_css );
+			}
+
+			return implode( ',', $stylesheets );
 		}
 
 
