@@ -3,7 +3,7 @@
  * Plugin Name: TCD Classic Editor
  * Plugin URI:
  * Description: This is a classic editor extension plug-in for TCD users.
- * Version: 1.3.8
+ * Version: 1.3.9
  * Author: TCD
  * Author URI: https://tcd-theme.com/
  * License: GPLv2 or later
@@ -61,6 +61,20 @@ load_textdomain(
 	'tcd-classic-editor',
 	TCDCE_PATH . 'languages/tcd-classic-editor-' . determine_locale() . '.mo'
 );
+
+// プラグインにその言語の翻訳ファイルが無いときは、WordPress に翻訳を自動で読み込ませない
+// （設定の初期値などが after_setup_theme より前に翻訳を使うため、読み込みが早すぎるという Notice が出る。読み込む翻訳は無いので、表示は変わらない）
+add_filter( 'lang_dir_for_domain', function( $path, $domain, $locale ) {
+	if (
+		'tcd-classic-editor' === $domain
+		&& $path && ! did_action( 'after_setup_theme' )
+		&& str_starts_with( $path, TCDCE_PATH )
+		&& ! file_exists( $path . $domain . '-' . $locale . '.mo' ) && ! file_exists( $path . $domain . '-' . $locale . '.l10n.php' )
+	) {
+		return false;
+	}
+	return $path;
+}, 10, 3 );
 
 __( 'This is a classic editor extension plug-in for TCD users.', 'tcd-classic-editor' );
 

@@ -1969,6 +1969,10 @@ background:unset;
   :is(.tcdce-body, .editor-styles-wrapper) .tcdce-sb:has(+ *) {
     margin-bottom: var(--tcdce-sb-margin-bottom-sp);
   }
+
+  :is(.tcdce-body, .editor-styles-wrapper) .tcdce-sb-content {
+    font-size: var(--tcdce-sb-font-size-sp);
+  }
 }
 
 /* image */

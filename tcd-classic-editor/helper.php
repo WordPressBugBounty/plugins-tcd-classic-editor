@@ -166,6 +166,14 @@ function tcdce_import_export_view( $option = 'tcdce_quicktag' ){
 
 
 /**
+ * インポート / エクスポートできる設定（このプラグインの設定だけ）
+ */
+function tcdce_import_export_settings(){
+  return array( 'tcdce_quicktag', 'tcdce_basic', 'tcdce_gmap', 'tcdce_toc' );
+}
+
+
+/**
  * インポート処理
  */
 add_action( 'admin_post_tcdce_import_action', 'tcdce_import_action' );
@@ -174,10 +182,15 @@ function tcdce_import_action() {
   // nonce認証
   check_admin_referer( 'tcdce_import' );
 
-  // 設定ページのリンクがなければ終了
+  // 権限チェック
+  if( ! current_user_can( 'manage_options' ) ){
+    wp_die( esc_html__( 'Sorry, you are not allowed to access this page.' ), 403 );
+  }
+
+  // 設定ページのリンクがない、またはこのプラグインの設定でなければ終了
   $setting = sanitize_text_field( wp_unslash( $_POST['setting'] ?? '' ) );
   $setting_page_url =sanitize_text_field( wp_unslash( $_POST['base_url'] ?? '' ) );
-  if( ! $setting || ! $setting_page_url ){
+  if( ! $setting_page_url || ! in_array( $setting, tcdce_import_export_settings(), true ) ){
     wp_die( esc_html__( 'Incorrect setting item.', 'tcd-classic-editor' ) );
   }
 
@@ -240,9 +253,14 @@ function tcdce_export_action() {
   // nonce認証
   check_admin_referer( 'tcdce_export' );
 
-  // optionの設定キー
+  // 権限チェック
+  if( ! current_user_can( 'manage_options' ) ){
+    wp_die( esc_html__( 'Sorry, you are not allowed to access this page.' ), 403 );
+  }
+
+  // optionの設定キー（このプラグインの設定だけ）
   $setting = sanitize_text_field( wp_unslash( $_GET['setting'] ?? '' ) );
-  if( ! $setting ){
+  if( ! in_array( $setting, tcdce_import_export_settings(), true ) ){
     wp_die( esc_html__( 'Incorrect setting item.', 'tcd-classic-editor' ) );
   }
 

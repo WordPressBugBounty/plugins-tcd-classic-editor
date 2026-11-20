@@ -443,7 +443,7 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 				// IDが指定されていれば、そのまま利用
 				$post_id = $atts['id'];
 				$post = get_post( $post_id );
-				if( ! $post ){
+				if( ! $post || 'publish' !== get_post_status( $post ) || ! is_post_type_viewable( get_post_type( $post ) ) ){
 					return '<div class="tcdce-caution">' . __( 'This post ID does not exist.', 'tcd-classic-editor' ) . '</div>';
 				}
 				// URL上書き
@@ -453,6 +453,9 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 				// URLが指定されていれば、URLからID取得
 				$post_id = url_to_postid( $atts['url'] );
 				$post = get_post( $post_id );
+				if( $post_id && ( ! $post || 'publish' !== get_post_status( $post ) || ! is_post_type_viewable( get_post_type( $post ) ) ) ){
+					return '<div class="tcdce-caution">' . __( 'Please enter the correct URL.', 'tcd-classic-editor' ) . '</div>';
+				}
 
 			}else{
 				// それ以外は終了
@@ -469,7 +472,15 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
 				$date = in_array( get_post_type( $post ), [ 'post', 'news' ], true ) ? get_the_date( 'Y.m.d', $post ) : '';
 				// 更新日付はフィルターを使ってテーマ側の設定と連動させる
 				$update_date = apply_filters( 'tcdce_clink_modify_date', get_the_modified_date( 'Y.m.d', $post ), $post );
-				$desc = $post->post_excerpt ? $post->post_excerpt : $post->post_content;
+				if( post_password_required( $post ) ){
+					$desc = '';
+				}elseif( $post->post_excerpt ){
+					$desc = $post->post_excerpt;
+				}else{
+					// 有料記事の有料部分など、カードに出さない本文をプラグイン・テーマで除けるようにする
+					$desc = (string) apply_filters( 'tcdce_clink_source_content', $post->post_content, $post );
+					$desc = preg_replace( '/(?:\[\s*(?:yomeru_)?members_only\b[^\]]*\]|<!--\s*(?:yomeru_)?members_only\s*-->).*/is', '', $desc );
+				}
 
 			// 外部リンク
 			}elseif( $graph = TCDCE_Open_Graph::fetch( $atts['url'] ) ){
