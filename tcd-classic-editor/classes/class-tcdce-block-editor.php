@@ -25,7 +25,9 @@ if ( ! class_exists( 'TCDCE_Block_Editor' ) ) {
     public function __construct() {
 
       // 親クラスの変数をセット
-      $this->set_vars();
+      // $this->set_vars();
+      // クイックタグの初期値は翻訳を含むので after_setup_theme でセットする（日本語以外のサイトで、翻訳の読み込みが早すぎるという Notice を出さない）
+      add_action( 'after_setup_theme', array( $this, 'set_vars' ) );
 
       // テーマ読み込み後に実行
       add_action( 'after_setup_theme', array( $this, 'init' ) );
@@ -140,7 +142,7 @@ if ( ! class_exists( 'TCDCE_Block_Editor' ) ) {
 		}
 
 		/**
-     * ブロックエディタ用JSの読み込み
+     * ブロックエディタ用JS・アイコン用CSSの読み込み
      */
 		public function enqueue_block_editor_assets() {
 			wp_enqueue_script(
@@ -154,6 +156,14 @@ if ( ! class_exists( 'TCDCE_Block_Editor' ) ) {
       if( ! empty( $this->tcdce_blocks ) ){
 				wp_localize_script( 'tcdce-block-editor', 'tcdceBlockEditorObj', $this->tcdce_blocks );
 			}
+
+			// ブロック挿入パネル・書式メニューのアイコン
+			wp_enqueue_style(
+				'tcdce-block-editor-icons',
+				TCDCE_URL . 'assets/css/block-editor-icons.css',
+				array(),
+				filemtime( TCDCE_PATH . 'assets/css/block-editor-icons.css' )
+			);
 
 		}
 

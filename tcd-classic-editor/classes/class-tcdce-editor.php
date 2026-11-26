@@ -39,7 +39,9 @@ if ( ! class_exists( 'TCDCE_Editor' ) ) {
     public function __construct() {
 
 			// 各種変数のセット
-			$this->set_vars();
+			// $this->set_vars();
+			// クイックタグの初期値は翻訳を含むので after_setup_theme でセットする（日本語以外のサイトで、翻訳の読み込みが早すぎるという Notice を出さない）
+			add_action( 'after_setup_theme', array( $this, 'set_vars' ) );
 
 			// フロント初期化
 			add_action( 'after_setup_theme', array( $this, 'front_init' ) );

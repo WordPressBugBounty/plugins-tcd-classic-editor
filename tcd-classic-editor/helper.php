@@ -184,7 +184,8 @@ function tcdce_import_action() {
 
   // 権限チェック
   if( ! current_user_can( 'manage_options' ) ){
-    wp_die( esc_html__( 'Sorry, you are not allowed to access this page.' ), 403 );
+    // wp_die( esc_html__( 'Sorry, you are not allowed to access this page.' ), 403 );
+    wp_die( esc_html__( 'Sorry, you are not allowed to access this page.', 'tcd-classic-editor' ), 403 );
   }
 
   // 設定ページのリンクがない、またはこのプラグインの設定でなければ終了
@@ -255,7 +256,8 @@ function tcdce_export_action() {
 
   // 権限チェック
   if( ! current_user_can( 'manage_options' ) ){
-    wp_die( esc_html__( 'Sorry, you are not allowed to access this page.' ), 403 );
+    // wp_die( esc_html__( 'Sorry, you are not allowed to access this page.' ), 403 );
+    wp_die( esc_html__( 'Sorry, you are not allowed to access this page.', 'tcd-classic-editor' ), 403 );
   }
 
   // optionの設定キー（このプラグインの設定だけ）

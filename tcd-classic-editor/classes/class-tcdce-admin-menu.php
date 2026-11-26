@@ -34,7 +34,11 @@ if ( ! class_exists( 'TCDCE_Admin_Menu' ) ) {
     public function __construct() {
 
 			// menu
-			do_action( 'tcdce_add_admin_menu', $this );
+			// do_action( 'tcdce_add_admin_menu', $this );
+			// 各メニューの登録は翻訳を含むので after_setup_theme で行う（日本語以外のサイトで、翻訳の読み込みが早すぎるという Notice を出さない）
+			add_action( 'after_setup_theme', function() {
+				do_action( 'tcdce_add_admin_menu', $this );
+			} );
 
 			// admin menu init
 			add_action( 'admin_menu', array( $this, 'init_menu' ) );

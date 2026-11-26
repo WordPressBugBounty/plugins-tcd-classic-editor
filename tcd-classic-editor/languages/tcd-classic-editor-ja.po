@@ -361,6 +361,10 @@ msgstr "エクスポート"
 msgid "Download the current configuration as a JSON file."
 msgstr "現在の設定をJSONファイルとしてダウンロードします。"
 
+#: helper.php:188 helper.php:259
+msgid "Sorry, you are not allowed to access this page."
+msgstr "このページにアクセスする権限がありません。"
+
 #: helper.php:181 helper.php:246
 msgid "Incorrect setting item."
 msgstr "不正な設定項目です。"

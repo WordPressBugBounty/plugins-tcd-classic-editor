@@ -3,7 +3,7 @@
  * Plugin Name: TCD Classic Editor
  * Plugin URI:
  * Description: This is a classic editor extension plug-in for TCD users.
- * Version: 1.3.9
+ * Version: 1.3.10
  * Author: TCD
  * Author URI: https://tcd-theme.com/
  * License: GPLv2 or later
@@ -76,7 +76,11 @@ add_filter( 'lang_dir_for_domain', function( $path, $domain, $locale ) {
 	return $path;
 }, 10, 3 );
 
-__( 'This is a classic editor extension plug-in for TCD users.', 'tcd-classic-editor' );
+// __( 'This is a classic editor extension plug-in for TCD users.', 'tcd-classic-editor' );
+// プラグインの説明を Poedit 等に認識させる（日本語以外のサイトで、翻訳の読み込みが早すぎるという Notice を出さないよう after_setup_theme の中で呼ぶ）
+add_action( 'after_setup_theme', function() {
+	__( 'This is a classic editor extension plug-in for TCD users.', 'tcd-classic-editor' );
+} );
 
 // add image size
 add_image_size( 'tcdce-s', 300, 300, true );

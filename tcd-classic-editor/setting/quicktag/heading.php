@@ -8,18 +8,32 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-$headings = array(
-  'h2' => __( 'H2', 'tcd-classic-editor' ),
-  'h3' => __( 'H3', 'tcd-classic-editor' ),
-  'h4' => __( 'H4', 'tcd-classic-editor' ),
-  'h5' => __( 'H5', 'tcd-classic-editor' ),
-  'h6' => __( 'H6', 'tcd-classic-editor' )
-);
+// $headings = array(
+//   'h2' => __( 'H2', 'tcd-classic-editor' ),
+//   'h3' => __( 'H3', 'tcd-classic-editor' ),
+//   'h4' => __( 'H4', 'tcd-classic-editor' ),
+//   'h5' => __( 'H5', 'tcd-classic-editor' ),
+//   'h6' => __( 'H6', 'tcd-classic-editor' )
+// );
 
-foreach( $headings as $tag => $label ){
+// 見出しの名前は翻訳を含むので、使うときに取得する（日本語以外のサイトで、翻訳の読み込みが早すぎるという Notice を出さない）
+function tcdce_heading_labels() {
+  return array(
+    'h2' => __( 'H2', 'tcd-classic-editor' ),
+    'h3' => __( 'H3', 'tcd-classic-editor' ),
+    'h4' => __( 'H4', 'tcd-classic-editor' ),
+    'h5' => __( 'H5', 'tcd-classic-editor' ),
+    'h6' => __( 'H6', 'tcd-classic-editor' )
+  );
+}
+
+// foreach( $headings as $tag => $label ){
+foreach( array( 'h2', 'h3', 'h4', 'h5', 'h6' ) as $tag ){
 
   // ブロックエディタにバリエーション登録
-  add_filter( 'tcdce_block_register_' . $tag, function( $value, $quicktag, $key ) use ( $tag, $label ) {
+  // add_filter( 'tcdce_block_register_' . $tag, function( $value, $quicktag, $key ) use ( $tag, $label ) {
+  add_filter( 'tcdce_block_register_' . $tag, function( $value, $quicktag, $key ) use ( $tag ) {
+    $label = tcdce_heading_labels()[ $tag ];
     return array(
       'name' => 'core/heading',
       'settings' => array(
@@ -39,7 +53,8 @@ foreach( $headings as $tag => $label ){
   }, 10, 3 );
 
   // エディタにクイックタグ登録
-  add_filter( 'tcdce_qt_register_' . $tag, function( $value, $quicktag ) use ( $tag, $label ) {
+  // add_filter( 'tcdce_qt_register_' . $tag, function( $value, $quicktag ) use ( $tag, $label ) {
+  add_filter( 'tcdce_qt_register_' . $tag, function( $value, $quicktag ) use ( $tag ) {
     return array(
       'display' => $quicktag['label'],
       'tagStart' => '<' . $tag . ' class="' . esc_attr( $quicktag['class'] ) . '">',
@@ -48,7 +63,10 @@ foreach( $headings as $tag => $label ){
   }, 10, 2 );
 
   // データセット
-  add_action( 'tcdce_qt_fields_set_properties', function( $instance ) use ( $tag, $label ) {
+  // add_action( 'tcdce_qt_fields_set_properties', function( $instance ) use ( $tag, $label ) {
+  add_action( 'tcdce_qt_fields_set_properties', function( $instance ) use ( $tag ) {
+
+    $label = tcdce_heading_labels()[ $tag ];
 
     // ラベルをセット
     $instance->set_label( $tag, $label );
